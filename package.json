@@ -4,6 +4,7 @@
         "discord.js": "^12.5.3",
         "distube": "^2.8.13",
         "dotenv": "^9.0.2",
+        "express": "^4.17.1",
         "ffmpeg-static": "^4.3.0",
         "opusscript": "^0.0.8",
         "ytdl-core": "^4.8.0"
