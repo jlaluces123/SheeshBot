@@ -28,7 +28,7 @@ app.listen(port, () => {
             setTimeout(() => {
                 distube.stop(msg);
             }, 31000);
-        } else if ('sheesh2') {
+        } else if (msg.content === 'sheesh2') {
             distube.play(msg, 'https://www.youtube.com/watch?v=JYXHXIX40CU');
             setTimeout(() => {
                 distube.stop(msg);
@@ -42,6 +42,11 @@ app.listen(port, () => {
             setTimeout(() => {
                 distube.stop(msg);
             }, 13000);
+        } else if (msg.content === 'misinput') {
+            distube.play(msg, 'https://www.youtube.com/watch?v=fMAFWH16n8Y');
+            setTimeout(() => {
+                distube.stop(msg);
+            }, 6000);
         } else if (msg.content === 'les go' || msg.content.includes('les')) {
             distube.play(msg, 'https://www.youtube.com/watch?v=rg5V1MFk9iA');
             setTimeout(() => {
