@@ -52,6 +52,11 @@ app.listen(port, () => {
             setTimeout(() => {
                 distube.stop(msg);
             }, 3000);
+        } else if (msg.content === 'wooow') {
+            distube.play(msg, 'https://www.youtube.com/watch?v=rVaclqTtRog');
+            setTimeout(() => {
+                distube.stop(msg);
+            }, 10000);
         } else if (msg.content === 'ascension') {
             distube.play(msg, 'https://www.youtube.com/watch?v=m4oZZhpMXP4');
             setTimeout(() => {
