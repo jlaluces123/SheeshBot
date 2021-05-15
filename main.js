@@ -14,7 +14,12 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
-    if (
+    if (msg.content === 'halosheesh') {
+        distube.play(msg, 'https://www.youtube.com/watch?v=co1VrBdaRhA');
+        setTimeout(() => {
+            distube.stop(msg);
+        }, 31000);
+    } else if (
         msg.content === '-sheesh' ||
         msg.content === 'sheesh' ||
         msg.content.includes('sheesh')
@@ -23,11 +28,6 @@ client.on('message', (msg) => {
         setTimeout(() => {
             distube.stop(msg);
         }, 13000);
-    } else if (msg.content === 'halosheesh') {
-        distube.play(msg, 'https://www.youtube.com/watch?v=co1VrBdaRhA');
-        setTimeout(() => {
-            distube.stop(msg);
-        }, 31000);
     } else if (msg.content === 'les go' || msg.content.includes('les')) {
         distube.play(msg, 'https://www.youtube.com/watch?v=rg5V1MFk9iA');
         setTimeout(() => {
