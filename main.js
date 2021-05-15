@@ -28,6 +28,11 @@ app.listen(port, () => {
             setTimeout(() => {
                 distube.stop(msg);
             }, 31000);
+        } else if ('sheesh2') {
+            distube.play(msg, 'https://www.youtube.com/watch?v=JYXHXIX40CU');
+            setTimeout(() => {
+                distube.stop(msg);
+            }, 11000);
         } else if (
             msg.content === '-sheesh' ||
             msg.content === 'sheesh' ||
